@@ -1,0 +1,10 @@
+.header {
+    color: red;
+    font-size: 32px;
+    border: 1px solid black;
+}
+
+.greeting {
+    font-size: 48px;
+    border: 1px solid black;
+}
