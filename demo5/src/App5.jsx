@@ -1,16 +1,20 @@
-import React from "react";
-
-let done = false;
-
-function strike() {
-    done = true;
-}
-
-function unStrike() {
-    done = false;
-}
+import React, { useState } from "react";
 
 function App() {
+    const [done, setDone] = useState(false);
+
+    const [red, green, blue] = [255, 255, 255];
+
+    console.log(red, green, blue);
+    
+    function strike() {
+        setDone(true);
+    }
+    
+    function unStrike() {
+        setDone(false);
+    }
+
     return (
         <div>
             <p style={done ? { textDecoration: "line-through" } : null}>Buy Food</p>
